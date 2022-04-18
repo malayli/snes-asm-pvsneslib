@@ -11,7 +11,7 @@ int main(void) {
     bgSetDisable(2);
     bgSetDisable(3);
     
-    //nmiSet(myConsoleVblank);
+    nmiSet(myConsoleVblank);
     
     setScreenOn();
 
