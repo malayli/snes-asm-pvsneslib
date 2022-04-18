@@ -1,0 +1,1 @@
+extern void myConsoleVblank(void);
