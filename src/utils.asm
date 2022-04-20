@@ -2,9 +2,10 @@
 
 .section ".myvlb_text" superfree
 ;---------------------------------------------------------------------------
-; void myConsoleVblank(void)
+; void myConsoleVblank()
 myConsoleVblank:
 
-
+; Refresh pad values
+	lda snes_mplay5
 
 .ends

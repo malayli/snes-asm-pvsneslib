@@ -1,1 +1,1 @@
-extern void myConsoleVblank(void);
+extern void myConsoleVblank();
