@@ -1,6 +1,8 @@
 #include <snes.h>
 #include "utils.h"
 
+extern char myVariable;
+
 int main(void) {
     // Initialize SNES
     consoleInit();
@@ -14,6 +16,8 @@ int main(void) {
     nmiSet(myConsoleVblank);
     
     setScreenOn();
+
+    myVariable = 0;
 
     while(1) {
         WaitForVBlank();

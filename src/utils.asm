@@ -1,7 +1,13 @@
 .include "hdr.asm"
 .include "../pvsneslib/pvsneslib/source/sprites.asm"
 
+.accu 8
+.index 8
+.8bit
+
+.ramsection "ram.data" bank 0 slot 1
 myVariable DSB 1
+.ends
 
 .section ".myvlb_text" superfree
 ;---------------------------------------------------------------------------
