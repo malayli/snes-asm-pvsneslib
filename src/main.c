@@ -1,8 +1,6 @@
 #include <snes.h>
 #include "utils.h"
 
-extern char myVariable;
-
 int main(void) {
     // Initialize SNES
     consoleInit();
