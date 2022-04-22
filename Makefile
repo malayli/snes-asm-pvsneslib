@@ -12,11 +12,11 @@ export ROMNAME := snesAsmPvsneslib
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx cleanAudio
+clean: cleanBuildRes cleanRom cleanGfx
 	
 #---------------------------------------------------------------------------------
-pvsneslibfont.pic: res/font/pvsneslibfont.bmp
+pvsneslibfont.pic: pvsneslibfont.bmp
 	@echo convert font with no tile reduction ... $(notdir $@)
-	$(GFXCONV) -pr -pc4 -n -gs8 -pe0 -fbmp -mp  $<
+	$(GFXCONV) -n -gs8 -po2 -pc16 -pe1 -mR! -m! -p! $<
 
 bitmaps : pvsneslibfont.pic
