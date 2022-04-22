@@ -1,7 +1,6 @@
 .include "hdr.asm"
-.include "../pvsneslib/pvsneslib/source/sprites.asm"
 
-.ramsection "ram.data" bank 0 slot 1
+.ramsection "ram.data" bank $7E slot 1
 myVariable DSB 1
 .ends
 
